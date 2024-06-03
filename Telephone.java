@@ -55,7 +55,7 @@ public class Tel {
 
     }
 
-    public void removePhone(String name, Integer phoneNum) {
+    public void remove(String name, Integer phoneNum) {
         if (phoneBook.get(name) != null) {
             if (phoneBook.get(name).remove(phoneNum))
                 phoneBook.get(name).remove(phoneNum);
@@ -67,7 +67,7 @@ public class Tel {
         }
     }
 
-    public void showAll() {
+    public void show() {
         
         List<Map.Entry<String, HashSet<Integer>>> sortList = new ArrayList<>(phoneBook.entrySet());
         sortList.sort((entry1, entry2) -> Integer.compare(entry2.getValue().size(), entry1.getValue().size()));
