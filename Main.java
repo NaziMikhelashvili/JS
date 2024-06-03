@@ -20,10 +20,10 @@ public class Main {
         mytel.add("MITE", 5555);
         
         // mytel.find("MATE");
-        // mytel.removePhone("MOTA", 45);
+        // mytel.remove("MOTA", 45);
         // mytel.find("MITA");
         
-        mytel.showAll();
+        mytel.show();
      
 
 
